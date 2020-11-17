@@ -7,3 +7,4 @@ As far as Git is concerned, there is no real difference between master and a fea
 
 My branch was rejected?
 There is a special case for when you are working on a team,​ and the feature branch being pushed is out of sync with the remote. To address this, simply use the following command:
+tanya pai
