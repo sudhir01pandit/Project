@@ -1,0 +1,9 @@
+When working with feature branches on a team, it is not typically appropriate to merge your own code into master. Although this is up to your team to manage, the norm is usually to make pull requests. Pull requests require that you push your branch to the remote repo.
+
+To push the new feature branch to the remote repo, simply do the following:
+
+$ git push origin my-new-feature-branch
+As far as Git is concerned, there is no real difference between master and a feature branch. So, all identical Git features apply.
+
+My branch was rejected?
+There is a special case for when you are working on a team,​ and the feature branch being pushed is out of sync with the remote. To address this, simply use the following command:
