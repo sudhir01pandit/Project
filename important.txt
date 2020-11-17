@@ -1,8 +1,17 @@
 When working with feature branches on a team, it is not typically appropriate to merge your own code into master. Although this is up to your team to manage, the norm is usually to make pull requests. Pull requests require that you push your branch to the remote repo.
+I want to be able to do the following:
 
+Create a local branch based on some other (remote or local) branch (via git branch or git checkout -b)
+
+Push the local branch to the remote repository (publish), but make it trackable so git pull and git push will work immediately.
+
+How do I do that?
+
+I know about --set-upstream in Git 1.7, but that is a post-creation action. I want to find a way to make a similar change when pushing the branch to the remote repository.
 To push the new feature branch to the remote repo, simply do the following:
 
 $ git push origin my-new-feature-branch
+If you enabled two-factor authentication in your Github account you won't be able to push via HTTPS using your accounts password. Instead you need to generate a personal access token. This can be done in the application settings of your Github account. Using this token as your password should allow you to push to your remote repository via HTTPS. Use your username as usual.
 As far as Git is concerned, there is no real difference between master and a feature branch. So, all identical Git features apply.
 
 My branch was rejected?
